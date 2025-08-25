@@ -1,3 +1,4 @@
+// Exportaciones originales de open-factura
 export { documentAuthorization } from "./services/authorization";
 export {
   generateInvoice,
@@ -52,3 +53,12 @@ export {
 } from "./baseData/invoice/remissionGuidesSustitutiveInfo";
 export { Retentions, Retention } from "./baseData/invoice/retentions";
 export { TaxInfo } from "./baseData/invoice/taxInfo";
+
+// Exportaciones del flujo completo de facturación
+export * from "./sri/openFacturaService";
+export * from "./ride/rideHtml";
+export * from "./services/emailService";
+export * from "./repositories";
+export * from "./invoices/invoice.service";
+export * from "./invoices/invoice.controller";
+export { default as app } from "./app/index";
